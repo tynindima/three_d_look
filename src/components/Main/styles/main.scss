@@ -1,0 +1,14 @@
+.main {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  &__nav {
+    background-color: green;
+  }
+
+  &__shop {
+    background-color: aqua;
+  }
+}

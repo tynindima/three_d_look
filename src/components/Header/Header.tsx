@@ -1,15 +1,11 @@
-import React from 'react';
-
+import React, { FC } from 'react';
 import './styles/header.scss';
-
-
 // @ts-ignore
 import main_header from './img/main_header.png';
-
 // @ts-ignore
 import basket from './img/basket.svg';
 
-export const Header = () => {
+export const Header: FC = () => {
   return (
     <header className="header">
       <img className="header__main-img" src={main_header} alt="shop name"/>

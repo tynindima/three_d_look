@@ -1,5 +1,6 @@
 import React from 'react';
-import {Header} from "./components/Header";
+import { Header } from './components/Header';
+import { Main } from './components/Main';
 
 import './App.scss';
 
@@ -7,7 +8,7 @@ import './App.scss';
 const App = () => (
   <>
     <Header />
-    <main>main</main>
+    <Main />
   </>
 );
 
