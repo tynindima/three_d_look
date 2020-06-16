@@ -4,12 +4,16 @@ export const Nav: FC = () => {
   return (
     <nav className="main__nav">
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+        <li>Все</li>
+        <li>Пальто</li>
+        <li>Обувь</li>
+        <li>Рубашки</li>
+        <li>Брюки</li>
       </ul>
+      <select name="types" id="">
+        <option value="1">Сортировать</option>
+        <option value="2">2</option>
+      </select>
     </nav>
   );
 };

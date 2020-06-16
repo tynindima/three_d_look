@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "name": "Рубашка на пуговицах",
-    "type": "рубашки",
-    "price": 320,
-    "count": 20,
+    "name": "Neil Barrett",
+    "type": "Пальто",
+    "price": 1250,
+    "count": 15,
     "images": [
-      "/img/shirt/shirt_1/shirt_with_buttons_1.png",
-      "/img/shirt/shirt_1/shirt_with_buttons_1.png",
-      "/img/shirt/shirt_1/shirt_with_buttons_1.png",
-      "/img/shirt/shirt_1/shirt_with_buttons_1.png",
-      "/img/shirt/shirt_1/shirt_with_buttons_5.png",
-      "/img/shirt/shirt_1/shirt_with_buttons_5.png",
-      "/img/shirt/shirt_1/shirt_with_buttons_5.png"
+      "/img/coat/coat_1/coat_1_1.png",
+      "/img/coat/coat_1/coat_1_2.png",
+      "/img/coat/coat_1/coat_1_3.png",
+      "/img/coat/coat_1/coat_1_4.png",
+      "/img/coat/coat_1/coat_1_5.png",
+      "/img/coat/coat_1/coat_1_6.png",
+      "/img/coat/coat_1/coat_1_7.png"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",
@@ -98,6 +98,46 @@
       "/img/trainers/trainers_3/trainers_3_4.jpg",
       "/img/trainers/trainers_3/trainers_3_5.jpg",
       "/img/trainers/trainers_3/trainers_3_6.jpg"
+    ],
+    "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
+    "sizes": "Рост модели 1,88 м, надет размер 2",
+    "addition": "Образ модели дополнен: Yohji Yamamoto широкие укороченные брюки, Converse кроссовки 'One Star'.",
+    "color": "Черный",
+    "structure": "Шерсть 100%",
+    "care": "Сухая чистка",
+    "vendor_code": "HHB73100"
+  },
+  {
+    "id": 6,
+    "name": "Bottega Veneta",
+    "type": "Рубашки",
+    "price": 150,
+    "count": 27,
+    "images": [
+      "/img/shirt/shirt_3/shirt_3_1.png",
+      "/img/shirt/shirt_3/shirt_3_2.png",
+      "/img/shirt/shirt_3/shirt_3_3.png"
+    ],
+    "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
+    "sizes": "Рост модели 1,88 м, надет размер 2",
+    "addition": "Образ модели дополнен: Yohji Yamamoto широкие укороченные брюки, Converse кроссовки 'One Star'.",
+    "color": "Черный",
+    "structure": "Шерсть 100%",
+    "care": "Сухая чистка",
+    "vendor_code": "HHB73100"
+  },
+  {
+    "id": 7,
+    "name": "Burberry",
+    "type": "Брюки",
+    "price": 235,
+    "count": 43,
+    "images": [
+      "/img/pants/pants_1/pants_1_1.png",
+      "/img/pants/pants_1/pants_1_2.png",
+      "/img/pants/pants_1/pants_1_3.png",
+      "/img/pants/pants_1/pants_1_4.png",
+      "/img/pants/pants_1/pants_1_5.png"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",

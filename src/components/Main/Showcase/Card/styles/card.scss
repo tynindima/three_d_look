@@ -5,8 +5,11 @@
   width: 280px;
   height: 506px;
   background-color: #fff;
-  border: 1px solid $primary-color;
   overflow: hidden;
+
+  &:hover {
+    outline: 1px solid $secondary-color;
+  }
 
   &__img-wrapper {
     width: 280px;
@@ -16,6 +19,7 @@
   &__img {
     width: 280px;
     height: 389px;
+    cursor: pointer;
   }
 
   &__carusel {
