@@ -7,10 +7,13 @@
   "author": "Dima Tynin",
   "license": "GPL-3.0",
   "dependencies": {
+    "@types/classnames": "^2.2.10",
     "@types/node": "^13.1.8",
     "@types/react": "^16.9.18",
     "@types/react-dom": "^16.9.5",
+    "@types/react-redux": "^7.1.9",
     "@types/react-router-dom": "^5.1.3",
+    "classnames": "^2.2.6",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -23,6 +26,8 @@
   "devDependencies": {
     "@mate-academy/eslint-config-react-typescript": "*",
     "@mate-academy/stylelint-config": "*",
+    "@typescript-eslint/eslint-plugin": "^3.2.0",
+    "@typescript-eslint/parser": "^3.2.0",
     "eslint": "^6.8.0",
     "gh-pages": "^2.2.0",
     "husky": "^4.0.10",

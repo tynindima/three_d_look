@@ -1,0 +1,63 @@
+@import "vars";
+
+.card {
+  position: relative;
+  width: 280px;
+  height: 506px;
+  background-color: #fff;
+  border: 1px solid $primary-color;
+  overflow: hidden;
+
+  &__img-wrapper {
+    width: 280px;
+    height: 389px;
+  }
+
+  &__img {
+    width: 280px;
+    height: 389px;
+  }
+
+  &__carusel {
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    right: 0;
+    height: 53px;
+  }
+
+  &__type {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: $secondary-color;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 19px;
+    color: $primary-color;
+    margin-left: 20px;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 15px;
+    color: $primary-color;
+  }
+
+  &__count {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: $secondary-color;
+    text-align: center;
+  }
+}
