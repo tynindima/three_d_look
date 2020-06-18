@@ -6,13 +6,13 @@
     "price": 1250,
     "count": 15,
     "images": [
-      "/img/coat/coat_1/coat_1_1.png",
-      "/img/coat/coat_1/coat_1_2.png",
-      "/img/coat/coat_1/coat_1_3.png",
-      "/img/coat/coat_1/coat_1_4.png",
-      "/img/coat/coat_1/coat_1_5.png",
-      "/img/coat/coat_1/coat_1_6.png",
-      "/img/coat/coat_1/coat_1_7.png"
+      "img/coat/coat_1/coat_1_1.png",
+      "img/coat/coat_1/coat_1_2.png",
+      "img/coat/coat_1/coat_1_3.png",
+      "img/coat/coat_1/coat_1_4.png",
+      "img/coat/coat_1/coat_1_5.png",
+      "img/coat/coat_1/coat_1_6.png",
+      "img/coat/coat_1/coat_1_7.png"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",
@@ -29,11 +29,11 @@
     "price": 170,
     "count": 34,
     "images": [
-      "/img/shirt/shirt_2/shirt_2_1.png",
-      "/img/shirt/shirt_2/shirt_2_2.png",
-      "/img/shirt/shirt_2/shirt_2_3.png",
-      "/img/shirt/shirt_2/shirt_2_4.png",
-      "/img/shirt/shirt_2/shirt_2_5.png"
+      "img/shirt/shirt_2/shirt_2_1.png",
+      "img/shirt/shirt_2/shirt_2_2.png",
+      "img/shirt/shirt_2/shirt_2_3.png",
+      "img/shirt/shirt_2/shirt_2_4.png",
+      "img/shirt/shirt_2/shirt_2_5.png"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",
@@ -50,11 +50,11 @@
     "price": 240,
     "count": 134,
     "images": [
-      "/img/trainers/trainers_1/trainers_1_1.jpg",
-      "/img/trainers/trainers_1/trainers_1_2.jpg",
-      "/img/trainers/trainers_1/trainers_1_3.jpg",
-      "/img/trainers/trainers_1/trainers_1_4.jpg",
-      "/img/trainers/trainers_1/trainers_1_5.jpg"
+      "img/trainers/trainers_1/trainers_1_1.jpg",
+      "img/trainers/trainers_1/trainers_1_2.jpg",
+      "img/trainers/trainers_1/trainers_1_3.jpg",
+      "img/trainers/trainers_1/trainers_1_4.jpg",
+      "img/trainers/trainers_1/trainers_1_5.jpg"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",
@@ -71,11 +71,11 @@
     "price": 290,
     "count": 112,
     "images": [
-      "/img/trainers/trainers_2/trainers_2_1.jpg",
-      "/img/trainers/trainers_2/trainers_2_2.jpeg",
-      "/img/trainers/trainers_2/trainers_2_3.jpeg",
-      "/img/trainers/trainers_2/trainers_2_4.jpeg",
-      "/img/trainers/trainers_2/trainers_2_5.jpeg"
+      "img/trainers/trainers_2/trainers_2_1.jpg",
+      "img/trainers/trainers_2/trainers_2_2.jpeg",
+      "img/trainers/trainers_2/trainers_2_3.jpeg",
+      "img/trainers/trainers_2/trainers_2_4.jpeg",
+      "img/trainers/trainers_2/trainers_2_5.jpeg"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",
@@ -92,12 +92,12 @@
     "price": 310,
     "count": 20,
     "images": [
-      "/img/trainers/trainers_3/trainers_3_1.jpg",
-      "/img/trainers/trainers_3/trainers_3_2.jpg",
-      "/img/trainers/trainers_3/trainers_3_3.jpg",
-      "/img/trainers/trainers_3/trainers_3_4.jpg",
-      "/img/trainers/trainers_3/trainers_3_5.jpg",
-      "/img/trainers/trainers_3/trainers_3_6.jpg"
+      "img/trainers/trainers_3/trainers_3_1.jpg",
+      "img/trainers/trainers_3/trainers_3_2.jpg",
+      "img/trainers/trainers_3/trainers_3_3.jpg",
+      "img/trainers/trainers_3/trainers_3_4.jpg",
+      "img/trainers/trainers_3/trainers_3_5.jpg",
+      "img/trainers/trainers_3/trainers_3_6.jpg"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",
@@ -114,9 +114,9 @@
     "price": 150,
     "count": 27,
     "images": [
-      "/img/shirt/shirt_3/shirt_3_1.png",
-      "/img/shirt/shirt_3/shirt_3_2.png",
-      "/img/shirt/shirt_3/shirt_3_3.png"
+      "img/shirt/shirt_3/shirt_3_1.png",
+      "img/shirt/shirt_3/shirt_3_2.png",
+      "img/shirt/shirt_3/shirt_3_3.png"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",
@@ -133,11 +133,11 @@
     "price": 235,
     "count": 43,
     "images": [
-      "/img/pants/pants_1/pants_1_1.png",
-      "/img/pants/pants_1/pants_1_2.png",
-      "/img/pants/pants_1/pants_1_3.png",
-      "/img/pants/pants_1/pants_1_4.png",
-      "/img/pants/pants_1/pants_1_5.png"
+      "img/pants/pants_1/pants_1_1.png",
+      "img/pants/pants_1/pants_1_2.png",
+      "img/pants/pants_1/pants_1_3.png",
+      "img/pants/pants_1/pants_1_4.png",
+      "img/pants/pants_1/pants_1_5.png"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",
