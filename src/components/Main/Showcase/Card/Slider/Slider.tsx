@@ -11,15 +11,16 @@ import rightBlack from './img/right_black.svg';
 // @ts-ignore
 import rightWhite from './img/right_white.svg';
 
-interface Active {
+export interface Active {
   active: boolean;
+  id: number;
 }
 
 interface Props {
   images: string[],
   handleSelectImg: (img: string) => void;
   activeImages: Active[];
-  setCheckets: any;
+  setCheckets: (images: Active[]) => void;
   visible: boolean,
 }
 
@@ -65,8 +66,6 @@ export const Slider: FC<Props> = (props) => {
 
   };
 
-  console.log(visible);
-
   return (
     <div
       style={visible ? {display: "flex"} : {display: "none"}}
@@ -78,7 +77,8 @@ export const Slider: FC<Props> = (props) => {
         {images.map((img, i) => (
           <img
             className={cx("slider__img", {"slider__img__active": activeImages[i].active})}
-            key={i} src={img}
+            key={i}
+            src={img}
             alt={`img ${i}`}
             style={{transform: `translateX(${x}%)`}}
             onClick={() => clickActive(img, i)}

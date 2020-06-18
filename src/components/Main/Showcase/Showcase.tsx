@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { connect } from 'react-redux';
-import { State } from '../../../store/store';
+import { State} from '../../../store/store';
+import { getVisibleProducts } from "../../../store/selectors";
 import Card from './Card/Card';
 import './styles/showcase.scss';
 
@@ -14,14 +15,16 @@ const Showcase: FC<Props> = (props) => {
   return (
     <section className="main__shop showcase">
       {products && products.map(product => (
-        <Card product={product} />
+        <div key={product.id}>
+          <Card product={product} />
+        </div>
       ))}
     </section>
   );
 };
 
 const mapStateToProps = (state: State) => ({
-  products: state.products,
+  products: getVisibleProducts(state),
 });
 
 export default connect(mapStateToProps, null)(Showcase);

@@ -1,25 +1,30 @@
-import { Action, createStore } from 'redux';
-
+import {AnyAction, createStore} from 'redux';
 import products from '../api/products.json';
-
-const FILTERED_SHIRT = 'FILTERED_SHIRT';
-
-export const filterOfShirt = () => ({ type: FILTERED_SHIRT });
+import {SET_FILTER_TYPE, SET_SORT_FIELD} from './types';
 
 export interface State {
   products: Product[];
+  sortBy: string;
+  filterBy: string;
 }
 
 const initialState = {
   products,
+  sortBy: 'new',
+  filterBy: '',
 };
 
-const reducer = (state: State = initialState, action: Action) => {
+const reducer = (state: State = initialState, action: AnyAction) => {
   switch (action.type) {
-    case FILTERED_SHIRT:
+    case SET_SORT_FIELD:
       return {
         ...state,
-        products: state.products.filter(product => product.type === 'рубашки'),
+        sortBy: action.sortBy,
+      };
+    case SET_FILTER_TYPE:
+      return {
+        ...state,
+        filterBy: action.filterBy,
       };
     default:
       return state;

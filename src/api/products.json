@@ -25,8 +25,8 @@
   {
     "id": 2,
     "name": "Roberto Cavalli",
-    "type": "рубашки",
-    "price": 150,
+    "type": "Рубашки",
+    "price": 170,
     "count": 34,
     "images": [
       "/img/shirt/shirt_2/shirt_2_1.png",
@@ -46,7 +46,7 @@
   {
     "id": 3,
     "name": "NIKE REVOLUTION 5",
-    "type": "обувь",
+    "type": "Обувь",
     "price": 240,
     "count": 134,
     "images": [

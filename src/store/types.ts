@@ -1,0 +1,2 @@
+export const SET_FILTER_TYPE = 'SET_FILTER_TYPE';
+export const SET_SORT_FIELD = 'SET_SORT_FIELD';

@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react';
-import { Slider } from './Slider';
+import {Active, Slider} from './Slider';
 import './styles/card.scss';
 
 interface Props {
@@ -8,7 +8,6 @@ interface Props {
 
 const Card: FC<Props> = (props) => {
   const {
-    id,
     name,
     images,
     type,
@@ -19,12 +18,17 @@ const Card: FC<Props> = (props) => {
   const [img, setImg] = useState(images[0]);
 
   let activeImages = images.map((_v, i) => {
-    if (i === 0) return {active: true};
-    return {active: false};
+    if (i === 0) return {active: true, id: i};
+    return {active: false, id: i};
   });
 
   const [checkets, setCheckets] = useState(activeImages);
   const [visible, setVisivle] = useState(false);
+
+
+  const handleClick = (images: Active[]) => {
+    setCheckets(images);
+  };
 
   const handleSelectImg = (img: string) => {
     setImg(img);
@@ -34,8 +38,11 @@ const Card: FC<Props> = (props) => {
     setVisivle(!visible);
   };
 
+  console.log(props.product)
+  console.log(img);
+
   return (
-    <div key={id} className="card">
+    <div className="card">
       <div className="card__img-wrapper">
         <img
           onClick={togglerSlider}
@@ -48,7 +55,7 @@ const Card: FC<Props> = (props) => {
         images={images}
         handleSelectImg={handleSelectImg}
         activeImages={checkets}
-        setCheckets={setCheckets}
+        setCheckets={handleClick}
         visible={visible}
       />
       <p className="card__type">{type}</p>

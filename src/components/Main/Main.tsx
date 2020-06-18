@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Nav } from './Nav';
+import Nav from './Nav/Nav';
 import Showcase from './Showcase/Showcase';
 
 
