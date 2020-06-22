@@ -1,0 +1,21 @@
+@import "vars";
+
+.button_main {
+  width: 260px;
+  height: 62px;
+  border: 2px solid $button-passive;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $button-passive;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:active {
+    border: 2px solid $primary-color;
+    color: $primary-color;
+  }
+}

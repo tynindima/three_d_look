@@ -13,28 +13,9 @@
     transform: translate(-50%, -50%);
   }
 
-  &__basket-wrap {
-    width: 50px;
-    margin-left: auto;
+  &__basket-container {
     margin-right: 0;
-    display: flex;
-    align-items: center;
+    margin-left: auto;
   }
 
-  &__basket-img {
-    cursor: pointer;
-  }
-
-  &__basket-count {
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    margin-left: 8px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-  }
 }

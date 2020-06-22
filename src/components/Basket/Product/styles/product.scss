@@ -1,0 +1,52 @@
+.product {
+  border-top: 1px solid #424242;
+  padding: 19px 39px;
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  grid-column-gap: 17px;
+
+  &:last-child {
+    border-bottom: 1px solid #424242;
+  }
+
+  &__img-wrap {
+    width: 84px;
+    height: 84px;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 84px;
+    height: 110px;
+  }
+
+  &__info-box {
+    margin-top: 27px;
+  }
+
+  &__name {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__counts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+  }
+
+  &__button {
+    background-color: inherit;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    width: 20px;
+    border: none;
+    cursor: pointer;
+  }
+}

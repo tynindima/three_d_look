@@ -1,18 +1,19 @@
 import React, { FC } from 'react';
+
 import './styles/header.scss';
 // @ts-ignore
 import main_header from './img/main_header.png';
-// @ts-ignore
-import basket from './img/basket.svg';
+import Basket_view from "../Basket_view/Basket_view";
 
-export const Header: FC = () => {
+const Header: FC = () => {
   return (
     <header className="header">
-      <img className="header__main-img" src={main_header} alt="shop name"/>
-      <div className="header__basket-wrap">
-        <img className="header__basket-img" src={basket} alt="basket"/>
-        <div className="header__basket-count">2</div>
+      <img className="header__main-img" src={main_header} alt="shop name" />
+      <div className="header__basket-container">
+        <Basket_view />
       </div>
     </header>
   );
 };
+
+export default Header;

@@ -1,19 +1,23 @@
-import React, {FC, useState} from 'react';
-import {Active, Slider} from './Slider';
+import React, { FC, useState } from 'react';
+import {connect} from 'react-redux';
+import { Active, Slider } from './Slider';
+import { NavLink } from 'react-router-dom';
 import './styles/card.scss';
+import {setSelectProduct} from "../../../../store/actionCreators";
 
 interface Props {
   product: Product;
+  setSelectedProduct: (product: Product) => void;
 }
 
-const Card: FC<Props> = (props) => {
+const Card: FC<Props> = ({ product, setSelectedProduct }) => {
   const {
     name,
     images,
     type,
     price,
     count,
-  } = props.product;
+  } = product;
 
   const [img, setImg] = useState(images[0]);
 
@@ -38,9 +42,6 @@ const Card: FC<Props> = (props) => {
     setVisivle(!visible);
   };
 
-  console.log(props.product)
-  console.log(img);
-
   return (
     <div className="card">
       <div className="card__img-wrapper">
@@ -60,10 +61,16 @@ const Card: FC<Props> = (props) => {
       />
       <p className="card__type">{type}</p>
       <h3 className="card__name">{name}</h3>
-      <h2 className="card__price">{`$${price}`}</h2>
+      <NavLink to="/page" className="card__link">
+        <h2 onClick={() => setSelectedProduct(product)} className="card__price">{`$${price}`}</h2>
+      </NavLink>
       <p className="card__count">{`на складе: ${count}`}</p>
     </div>
   );
 };
 
-export default Card;
+const mapDispatchToProps = {
+  setSelectedProduct: setSelectProduct,
+};
+
+export default connect(null, mapDispatchToProps)(Card);

@@ -1,17 +1,30 @@
 import {AnyAction, createStore} from 'redux';
 import products from '../api/products.json';
-import {SET_FILTER_TYPE, SET_SORT_FIELD} from './types';
+import {
+  SELECT_PRODUCT,
+  SET_FILTER_TYPE,
+  SET_IS_BASKET,
+  SET_SORT_FIELD,
+  SET_PRODUCT_TO_BASKET,
+  SET_CLEAR_BASKET,
+} from './types';
 
 export interface State {
   products: Product[];
   sortBy: string;
-  filterBy: string;
+  filterBy: string
+  selectedProduct: Product;
+  isBasket: boolean;
+  basket: Product[]
 }
 
 const initialState = {
   products,
   sortBy: 'new',
   filterBy: '',
+  selectedProduct: products[0],
+  isBasket: false,
+  basket: [],
 };
 
 const reducer = (state: State = initialState, action: AnyAction) => {
@@ -25,6 +38,26 @@ const reducer = (state: State = initialState, action: AnyAction) => {
       return {
         ...state,
         filterBy: action.filterBy,
+      };
+    case SELECT_PRODUCT:
+      return {
+        ...state,
+        selectedProduct: action.selectedProduct,
+      };
+    case SET_IS_BASKET:
+      return {
+        ...state,
+        isBasket: action.isBasket,
+      };
+    case SET_PRODUCT_TO_BASKET:
+      return {
+        ...state,
+        basket: [...state.basket, action.product],
+      };
+    case SET_CLEAR_BASKET:
+      return {
+        ...state,
+        basket: [],
       };
     default:
       return state;
