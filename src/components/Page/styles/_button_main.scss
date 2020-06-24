@@ -3,13 +3,13 @@
 .button_main {
   width: 260px;
   height: 62px;
-  border: 2px solid $button-passive;
+  border: 2px solid $active-color;
   box-sizing: border-box;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: $button-passive;
+  color: $active-color;
   outline: none;
   cursor: pointer;
   transition: 0.2s;

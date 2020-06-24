@@ -50,11 +50,13 @@
   &__price {
     font-weight: 500;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     letter-spacing: 1px;
     text-align: center;
     margin-top: 15px;
-    color: $primary-color;
+    color: $active-color;
+    border: 1px solid $active-color;
+    margin: 10px 20px;
   }
 
   &__link {
