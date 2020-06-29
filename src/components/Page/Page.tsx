@@ -9,16 +9,17 @@ import main_header from '../Header/img/main_header.png';
 import basket from '../Header/img/basket.svg';
 // @ts-ignore
 import arrowBack from './img/arrow_back.svg';
-import {productToBasket} from "../../store/actionCreators";
+import {productToBasket, setIsBuyed} from "../../store/actionCreators";
 import Basket_view from "../Basket_view/Basket_view";
 
 interface Props {
   product: Product;
   basket: Product[];
   getProduct: (product: Product) => void;
+  toSetBuyed: (isBuyed: boolean) => void;
 }
 
-const Page: FC<Props> = ({product, getProduct, basket}) => {
+const Page: FC<Props> = ({product, getProduct, basket, toSetBuyed}) => {
   const {
     name,
     type,
@@ -37,6 +38,7 @@ const Page: FC<Props> = ({product, getProduct, basket}) => {
 
     if (!check) {
       getProduct(product);
+      toSetBuyed(false);
     }
   };
 
@@ -95,6 +97,7 @@ const mapStateToProps = (state: State) => ({
 
 const mapDispatchToProps = {
   getProduct: productToBasket,
+  toSetBuyed: setIsBuyed,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Page);

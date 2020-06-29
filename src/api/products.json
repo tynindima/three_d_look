@@ -6,13 +6,8 @@
     "price": 1250,
     "count": 15,
     "images": [
-      "img/coat/coat_1/coat_1_1.png",
-      "img/coat/coat_1/coat_1_2.png",
-      "img/coat/coat_1/coat_1_3.png",
-      "img/coat/coat_1/coat_1_4.png",
-      "img/coat/coat_1/coat_1_5.png",
-      "img/coat/coat_1/coat_1_6.png",
-      "img/coat/coat_1/coat_1_7.png"
+      "img/coat/coat_1/coat_1_1.jpg",
+      "img/coat/coat_1/coat_1_2.jpg"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",
@@ -29,11 +24,12 @@
     "price": 170,
     "count": 34,
     "images": [
-      "img/shirt/shirt_2/shirt_2_1.png",
-      "img/shirt/shirt_2/shirt_2_2.png",
-      "img/shirt/shirt_2/shirt_2_3.png",
-      "img/shirt/shirt_2/shirt_2_4.png",
-      "img/shirt/shirt_2/shirt_2_5.png"
+      "img/shirt/shirt_1/shirt_1_1.jpg",
+      "img/shirt/shirt_1/shirt_1_2.jpg",
+      "img/shirt/shirt_1/shirt_1_3.jpg",
+      "img/shirt/shirt_1/shirt_1_4.jpg",
+      "img/shirt/shirt_1/shirt_1_5.jpg",
+      "img/shirt/shirt_1/shirt_1_6.jpg"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",
@@ -53,8 +49,7 @@
       "img/trainers/trainers_1/trainers_1_1.jpg",
       "img/trainers/trainers_1/trainers_1_2.jpg",
       "img/trainers/trainers_1/trainers_1_3.jpg",
-      "img/trainers/trainers_1/trainers_1_4.jpg",
-      "img/trainers/trainers_1/trainers_1_5.jpg"
+      "img/trainers/trainers_1/trainers_1_4.jpg"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",
@@ -114,9 +109,9 @@
     "price": 150,
     "count": 27,
     "images": [
-      "img/shirt/shirt_3/shirt_3_1.png",
-      "img/shirt/shirt_3/shirt_3_2.png",
-      "img/shirt/shirt_3/shirt_3_3.png"
+      "img/shirt/shirt_2/shirt_2_1.png",
+      "img/shirt/shirt_2/shirt_2_2.png",
+      "img/shirt/shirt_2/shirt_2_3.png"
     ],
     "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
     "sizes": "Рост модели 1,88 м, надет размер 2",

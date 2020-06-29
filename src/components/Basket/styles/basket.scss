@@ -20,8 +20,16 @@
     cursor: pointer;
   }
 
-  &__container {
+  &__box {
     margin-top: 143px;
+  }
+
+  &__thanks-text {
+    padding: 0 39px;
+
+  }
+
+  &__container {
     max-height: 370px;
     overflow: auto;
   }
@@ -38,6 +46,10 @@
       border: 2px solid $secondary-color;
     }
   }
+}
+
+.disapper {
+  display: none;
 }
 
 .basket-left {

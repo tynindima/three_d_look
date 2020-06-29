@@ -7,6 +7,7 @@ import {
   SET_SORT_FIELD,
   SET_PRODUCT_TO_BASKET,
   SET_CLEAR_BASKET,
+  SET_IS_BUYED,
 } from './types';
 
 export interface State {
@@ -15,7 +16,8 @@ export interface State {
   filterBy: string
   selectedProduct: Product;
   isBasket: boolean;
-  basket: Product[]
+  basket: Product[];
+  isBuyed: boolean;
 }
 
 const initialState = {
@@ -25,6 +27,7 @@ const initialState = {
   selectedProduct: products[0],
   isBasket: false,
   basket: [],
+  isBuyed: false,
 };
 
 const reducer = (state: State = initialState, action: AnyAction) => {
@@ -58,6 +61,11 @@ const reducer = (state: State = initialState, action: AnyAction) => {
       return {
         ...state,
         basket: [],
+      };
+    case SET_IS_BUYED:
+      return {
+        ...state,
+        isBuyed: action.isBuyed,
       };
     default:
       return state;

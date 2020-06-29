@@ -86,7 +86,11 @@ export const Slider: FC<Props> = (props) => {
         ))}
       </div>
       <button className="slider__button" type="button" onClick={goRight}>
-        <img src={x === -(images.length - 5) * widthImg ? rightWhite : rightBlack} alt="right_black" />
+        <img
+          src={x === -(images.length - 5) * widthImg || images.length < 5
+          ? rightWhite
+          : rightBlack} alt="right_black"
+        />
       </button>
     </div>
   );

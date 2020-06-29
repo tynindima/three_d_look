@@ -4,3 +4,4 @@ export const SELECT_PRODUCT = 'SELECT_PRODUCT';
 export const SET_IS_BASKET = 'SET_IS_BASKET';
 export const SET_PRODUCT_TO_BASKET = 'SET_PRODUCT_TO_BASKET';
 export const SET_CLEAR_BASKET = 'SET_CLEAR_BASKET';
+export const SET_IS_BUYED = 'SET_IS_BUYED';

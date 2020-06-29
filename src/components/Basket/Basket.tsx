@@ -2,25 +2,33 @@ import React, {FC, useState} from 'react';
 import { connect } from 'react-redux';
 import './styles/basket.scss';
 import { State } from '../../store/store';
-import { clearBasket, toggleBasket } from '../../store/actionCreators';
+import { clearBasket, toggleBasket, setIsBuyed } from '../../store/actionCreators';
+import cx from 'classnames';
+
 // @ts-ignore
 import close from './img/close.svg';
 import Product from "./Product/Product";
 
 interface Props {
   isBasket: boolean;
+  isBuyed: boolean;
   togglerBasket: (isBasket: boolean) => void;
   basket: Product[];
   toClear: () => void;
+  toSetBuyed: (isBuyed: boolean) => void;
 }
 
 const Basket: FC<Props> = (props) => {
-  const { isBasket, togglerBasket, basket, toClear } = props;
+  const {
+    isBasket,
+    isBuyed,
+    togglerBasket,
+    basket,
+    toClear,
+    toSetBuyed,
+  } = props;
 
   const [countedBasket, setCountedBasket] = useState(basket);
-  console.log(countedBasket);
-  console.log(basket);
-
 
   const handleAddBasket = (product: Product) => {
     setCountedBasket(basket.map(item => {
@@ -30,6 +38,11 @@ const Basket: FC<Props> = (props) => {
 
       return item;
     }))
+  };
+
+  const heandleBuy = () => {
+    toSetBuyed(true);
+    toClear();
   };
 
 
@@ -50,23 +63,31 @@ const Basket: FC<Props> = (props) => {
           <img src={close} alt="close"/>
         </button>
 
-        <div className="basket__container">
-          {basket.map(product => (
-            <Product key={product.id} product={product} handleAddBasket={handleAddBasket} />
-            )
-          )}
+        <div className={cx("basket__box", {"disapper": isBuyed})}>
+          <div className="basket__container">
+            {basket.map(product => (
+              <Product key={product.id} product={product} handleAddBasket={handleAddBasket} />
+              )
+            )}
+          </div>
+          <div className="basket__total total">
+            <p className="total__name">Итого</p>
+            <p className="tatal__price">{`$${total}`}</p>
+          </div>
+          <button
+            onClick={heandleBuy}
+            className="basket__button button_main"
+            type="button"
+          >
+            Купить
+          </button>
         </div>
-        <div className="basket__total total">
-          <p className="total__name">Итого</p>
-          <p className="tatal__price">{`$${total}`}</p>
+
+        <div className={cx("basket__box", {"disapper": !isBuyed})}>
+          <p className="basket__thanks-text">Спасибо за заказ!</p>
+          <p className="basket__thanks-text">Мы его приняли в работу.</p>
         </div>
-        <button
-          onClick={toClear}
-          className="basket__button button_main"
-          type="button"
-        >
-          Купить
-        </button>
+
       </div>
 
       <div className="basket-left" style={isBasket ? {display: "block"} : {display: "none"}} />
@@ -78,11 +99,13 @@ const Basket: FC<Props> = (props) => {
 const mapStateToProps = (state: State) => ({
   isBasket: state.isBasket,
   basket: state.basket,
+  isBuyed: state.isBuyed,
 });
 
 const mapDispatchToProps = {
   togglerBasket: toggleBasket,
   toClear: clearBasket,
+  toSetBuyed: setIsBuyed,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Basket);
